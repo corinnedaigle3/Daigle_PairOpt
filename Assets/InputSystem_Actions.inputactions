@@ -61,9 +61,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Grapple",
+                    "name": "GrappleStart",
                     "type": "Button",
                     "id": "c034078d-ed0d-4d9c-99d6-9640010149c8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GrappleStop",
+                    "type": "Button",
+                    "id": "0f10824f-30fc-4453-b8ac-2d866ca36e60",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -309,18 +318,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Grapple",
+                    "action": "GrappleStart",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "87ef5925-a576-4e90-b85c-52dfe19885ae",
+                    "id": "7881309b-b8e5-4f55-944f-40ac5b782e63",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Grapple",
+                    "action": "GrappleStart",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -343,6 +352,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dea7d148-59e5-4689-a39f-e82398a48c6a",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleStop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
