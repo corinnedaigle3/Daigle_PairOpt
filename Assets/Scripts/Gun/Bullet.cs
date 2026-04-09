@@ -13,6 +13,8 @@ public class Bullet : MonoBehaviour
     private bool isActiveBullet = false;
     private float lifeTimer;
 
+    private bool hasBeenReleased;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,6 +23,8 @@ public class Bullet : MonoBehaviour
     private void OnEnable()
     {
         if (!isActiveBullet) return;
+
+        hasBeenReleased = false;
 
         // Reset lifetime
         lifeTimer = destroyTime;
@@ -37,7 +41,7 @@ public class Bullet : MonoBehaviour
 
         if (lifeTimer <= 0f)
         {
-            _pool.Release(this);
+            ReleaseBullet();
         }
     }
 
@@ -52,7 +56,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            _pool.Release(this);
+            ReleaseBullet();
         }
     }
 
@@ -64,5 +68,13 @@ public class Bullet : MonoBehaviour
     public void SetActiveState(bool state)
     {
         isActiveBullet = state;
+    }
+
+    private void ReleaseBullet()
+    {
+        if (hasBeenReleased) return;
+
+        hasBeenReleased = true;
+        _pool.Release(this);
     }
 }
