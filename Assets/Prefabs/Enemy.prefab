@@ -107,9 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   attackRange: 5
-  sightRange: 20
-  timeBetweenAttacks: 3
-  atkDamage: 5
+  sightRange: 25
 --- !u!114 &6300461865296284695
 MonoBehaviour:
   m_ObjectHideFlags: 0
