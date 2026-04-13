@@ -19,6 +19,6 @@ public class Timer : MonoBehaviour
 
     void UpdateText() 
     { 
-        text.text = time.ToString("F0"); 
+        text.text = "Timer: " + time.ToString("F0"); 
     }
 }
