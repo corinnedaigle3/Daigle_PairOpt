@@ -6,6 +6,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject deathScreen; 
     [SerializeField] GameObject startScreen; 
     [SerializeField] GameObject winScreen;
+    [SerializeField] GameObject hTP;
     [SerializeField] PlayerController playerController; 
     public bool startGame; 
     
@@ -18,7 +19,8 @@ public class UIManager : MonoBehaviour
     { 
         startScreen.SetActive(true);
         winScreen.SetActive(false);
-        deathScreen.SetActive(false); 
+        deathScreen.SetActive(false);
+        hTP.SetActive(false);
         Cursor.lockState = CursorLockMode.None; 
         Cursor.visible = true; 
     } 
@@ -30,6 +32,12 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; 
         Cursor.visible = false; 
     } 
+
+    public void HTP()
+    {
+        hTP.SetActive(true);
+        startScreen.SetActive(false);
+    }
 
     public void ShowWinScreen()
     {
