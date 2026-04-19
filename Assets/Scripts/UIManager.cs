@@ -21,12 +21,16 @@ public class UIManager : MonoBehaviour
         winScreen.SetActive(false);
         deathScreen.SetActive(false);
         hTP.SetActive(false);
+
         Cursor.lockState = CursorLockMode.None; 
         Cursor.visible = true; 
     } 
 
     public void CloseStartScreen() 
-    { 
+    {
+        winScreen.SetActive(false);
+        deathScreen.SetActive(false);
+        hTP.SetActive(false);
         startScreen.SetActive(false); 
         startGame = true; 
         Cursor.lockState = CursorLockMode.Locked; 

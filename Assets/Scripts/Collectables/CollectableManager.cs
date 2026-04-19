@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEditor.Rendering;
 
 public class CollectibleManager : MonoBehaviour
 {
