@@ -34,12 +34,11 @@ public class PlayerController : MonoBehaviour
         Jump();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    /*void Start()
+    public void OnEscape(InputAction.CallbackContext context)
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }*/
+        Escape();
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -117,5 +116,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearDamping = 0;
         }
+    }
+
+    public void Escape()
+    {
+        Application.Quit();
     }
 }

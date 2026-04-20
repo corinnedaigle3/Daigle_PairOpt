@@ -2315,7 +2315,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 426064025}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ShowStartScreen
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2512,7 +2512,7 @@ GameObject:
   - component: {fileID: 649781816}
   - component: {fileID: 649781815}
   m_Layer: 5
-  m_Name: StartB (1)
+  m_Name: HTP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
