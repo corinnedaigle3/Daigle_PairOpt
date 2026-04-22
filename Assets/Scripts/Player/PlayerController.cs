@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float playerHeight;
     [SerializeField] LayerMask whatIsGround;
-    public bool grounded;
+    private bool grounded;
     [SerializeField] private float groundDrag;
 
     private float yRotation;

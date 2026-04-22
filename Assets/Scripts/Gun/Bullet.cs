@@ -48,7 +48,7 @@ public class Bullet : MonoBehaviour
 
     private void OnDisable()
     {
-        // Reset velocity (important for pooling)
+        // Reset velocity
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
     }
